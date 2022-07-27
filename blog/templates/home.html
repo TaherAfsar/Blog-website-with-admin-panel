@@ -1,0 +1,29 @@
+ {% extends 'base.html' %}
+ {% block title %}Home{% endblock title %}
+ {% block body %}
+{% for blog in blogs%}
+
+      
+
+<div class ="container">
+ <div class="row">
+   <div class="col s12 m7">
+     <div class="card">
+       <div class="card-image">
+         <img src="{{blog.image.url}}">
+         <span class="card-title"></span>
+       </div>
+       <div class="card-content">
+         <p>{{blog.description}}</p>
+         <p>{{blog.date}}</p>
+       </div>
+       <div class="card-action">
+         <a href="#">{{blog.title}}</a>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+
+ {%endfor%}
+ {% endblock  %}
