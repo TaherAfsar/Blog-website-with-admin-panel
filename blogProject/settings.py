@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-g8vv=#vs4z@b=skg9#ozyzyv-fi5dlxlp%ckmgq_#0w$n0g2#v'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1','contacts-form.herokuapp.com']
 
