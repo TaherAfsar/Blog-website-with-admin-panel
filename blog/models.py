@@ -13,3 +13,5 @@ class Blog(models.Model):
     image = models.ImageField(upload_to='images')
     date = models.DateField(auto_now=True)
     
+    def __str__(self):
+        return self.title

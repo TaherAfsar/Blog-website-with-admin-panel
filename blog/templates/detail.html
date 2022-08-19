@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<div class='center-align'>
+<img  src = "{{blog.image.url}}" width =30% >
+<h2>{{blog.title}}</h2>
+<h6>{{blog.date|date:'d F Y'}}</h6>
+<h5>{{blog.description}}</h5>
+{% comment %} <h2>{{blog}}</h2>
+<h2>{{blog}}</h2> {% endcomment %}
+</div>
+{% endblock  %}
